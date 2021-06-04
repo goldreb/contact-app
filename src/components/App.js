@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; //using hooks
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import api from "../api/contacts";
@@ -12,9 +12,9 @@ import EditContact from "./EditContact";
 
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
-  const [contacts, setContacts] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState("");
+  const [contacts, setContacts] = useState([]); //using hooks
+  const [searchTerm, setSearchTerm] = useState(""); //using hooks
+  const [searchResults, setSearchResults] = useState(""); //using hooks
 
   //Retrieve Contacts
   const retrieveContacts = async () => {
